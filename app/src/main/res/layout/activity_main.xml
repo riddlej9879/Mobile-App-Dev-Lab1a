@@ -105,7 +105,8 @@
                 android:paddingStart="80dp"
                 android:paddingEnd="10dp"
                 android:text="@string/player_score"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:tag="play_score" />
 
             <TextView
                 android:id="@+id/computer_score"
@@ -116,7 +117,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="90dp"
                 android:text="@string/computer_score"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:tag="comp_score" />
         </FrameLayout>
 
         <TextView
@@ -125,7 +127,8 @@
             android:layout_height="wrap_content"
             android:paddingTop="2dp"
             android:text="@string/player_selection"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:tag="play_weap" />
 
         <TextView
             android:id="@+id/computer_selection"
@@ -133,7 +136,8 @@
             android:layout_height="wrap_content"
             android:paddingTop="2dp"
             android:text="@string/computer_selection"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:tag="comp_weap" />
 
         <TextView
             android:id="@+id/winning_message"
@@ -142,14 +146,17 @@
             android:paddingTop="2dp"
             android:gravity="center_horizontal|center_vertical"
             android:text="@string/winning_message"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:tag="win_msg" />
 
         <Button
             android:id="@+id/start_stop_button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/start_stop_button"
-            android:translationY="200dp" />
+            android:translationY="200dp"
+            android:tag="start_stop_btn"
+            android:onClick="ChangeState" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
